@@ -1,0 +1,38 @@
+{
+  "name": "package-adrienm",
+  "version": "1.0.9",
+  "description": "package which can display a modal",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "postcss": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^4.11.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "source-map-loader": "^5.0.0",
+    "tsc-hooks": "^1.1.2",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": ">=18.2.0",
+    "typescript": ">=3.7.0"
+  },
+  "files": [
+    "dist/"
+  ]
+}

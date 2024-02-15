@@ -1,0 +1,24 @@
+const postcss = require('rollup-plugin-postcss');
+const typescript = require('@rollup/plugin-typescript');
+const peerDepsExternal = require('rollup-plugin-peer-deps-external');
+const resolve = require('@rollup/plugin-node-resolve').default;
+const commonjs = require('@rollup/plugin-commonjs');
+const path = require('path');
+
+module.exports = {
+  input: path.resolve(__dirname, 'src/index.tsx'),
+  output: {
+    dir: 'dist',
+    format: 'cjs',
+    sourcemap: 'inline',
+  },
+  plugins: [
+    peerDepsExternal(),
+    resolve(),
+    typescript({ tsconfig: './tsconfig.json' }),
+    commonjs(),
+    postcss({
+      modules: true,
+    }),
+  ],
+};
