@@ -2,7 +2,7 @@
 
 ## Description
 
-`package-adrienm` est un package React qui fournit ...
+`package-adrienm` est un package React qui fournit un composant Modal afin d'afficher une fenetre modal
 
 ## Installation
 
