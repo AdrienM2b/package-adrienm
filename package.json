@@ -1,6 +1,6 @@
 {
   "name": "package-adrienm",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "package which can display a modal",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -9,8 +9,12 @@
     "build": "rollup -c",
     "prepare": "npm run build"
   },
-  "author": "",
+  "author": "Adrien Marchetti",
   "license": "ISC",
+  "keywords": [
+    "modal",
+    ""
+  ],
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",

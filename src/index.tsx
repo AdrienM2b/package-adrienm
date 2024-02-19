@@ -5,7 +5,7 @@ import s from './styles.module.css';
 type ModalProps = {
   text: string;
   modalOpen: boolean;
-  closeModal: any;
+  closeModal: React.MouseEventHandler<HTMLSpanElement>;
 };
 
 export const Modal: React.FC<ModalProps> = ({
@@ -13,16 +13,16 @@ export const Modal: React.FC<ModalProps> = ({
   modalOpen,
   closeModal,
 }) => {
+  // commentaire
   const handleClose = closeModal;
-  console.log(modalOpen);
   if (modalOpen) {
     return (
       <div className={s.modal_blocker}>
         <div className={s.modal_container}>
           <span
             className={s.close_button}
-            onClick={() => {
-              handleClose();
+            onClick={(e) => {
+              handleClose(e);
             }}
           >
             X
